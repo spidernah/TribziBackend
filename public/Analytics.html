@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html> 
+  <head> 
+    <title>
+      Campaign Overview
+    </title> 
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"> 
+    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="res/js/min/excanvas.min.js"></script><![endif]-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="res/css/analytics.css" />
+    
+    <link rel="stylesheet" href="res/css/jquery-ui.css" />
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+    
+    <script language="javascript" type="text/javascript" src="res/js/jquery.flot.js"></script>
+    <script language="javascript" type="text/javascript" src="res/js/jquery.flot.pie.js"></script>
+    <script language="javascript" type="text/javascript" src="res/js/jquery.flot.time.js"></script>
+    
+    <script language="javascript" type="text/javascript" src="res/js/analytics.js"></script>
+
+    <script language="javascript" type="text/javascript" src="res/js/min/spin.min.js"></script>
+    <script language="javascript" type="text/javascript" src="res/js/analytics_page_setup.js"></script>
+    <script type="text/javascript">
+    </script>
+    
+    
+  </head> 
+  <body>
+    <div id="container"> 
+      <div id="header">
+	HEADER CONTENT
+      </div>
+      <div id="filter">
+	<div id="filter-campaign">
+	  <label for="filter-campaign">Campaign: </label><input id="campaigns" />
+	</div>
+	<div id="filter-from">
+	  From: <input type="text" id="filter-from-input" />
+	</div>
+	<div id="filter-to">
+	  To: <input type="text" id="filter-to-input" />
+	</div>
+	<div id="filter-sharetypes">
+	  Include share types:
+	  <div id="share_types">
+	    <!-- TODO ADD ALL -->
+	    <input type="radio" id="facebook" checked="checked" name="share_types" /><label for="facebook">Facebook</label>
+	    <input type="radio" id="twitter" name="share_types" /><label for="twitter">Twitter</label>
+	    <input type="radio" id="pinterest" name="share_types" /><label for="pinterest">Pinterest</label>
+	    <input type="radio" id="email" name="share_types" /><label for="email">Email</label>
+	  </div>
+<input type="checkbox" id="all" /><label for="all">All</label>
+	  <div id="filter-apply">
+	    <button type="submit">Apply filter</button>
+	  </div>
+	  <div id="progress-spinner" ></div>
+	</div>
+	
+	<div class="floatfix"></div>
+      </div>
+      <div id="contents">
+	<div id="title">
+	  Campaign Overview
+	</div>
+	<div id="overview-boxes">
+	  <div id="offer-views" class="overview-box">
+	    <div class="title">
+	      Offer Views
+	    </div>
+	    <div class="value offer-views-value">
+	      
+	    </div>
+	    <div class="percent">
+	    </div>
+	  </div>
+	  <div id="social-share-clicks" class="overview-box">
+	    <div class="title">
+	      Social Share Clicks
+	    </div>
+	    <div class="value social-share-value">
+	      
+	    </div>
+	    <div class="percent"></div>
+	  </div>
+	  <div id="visits" class="overview-box">
+	    <div class="title">
+	      Visits
+	    </div>
+	    <div class="value visits-value">
+	      
+	    </div>
+	  </div>
+	  <div id="sales" class="overview-box">
+	    <div class="title">
+	      Sales
+	    </div>
+	    <div class="value sales-value">
+	      
+	    </div>
+	    <div class="percent"></div>
+	  </div>
+	  <div id="revenue" class="overview-box">
+	    <div class="title">
+	      
+	    </div>
+	    <div class="value">
+	      
+	    </div>
+	    <div class="percent">
+	    </div>
+	  </div>
+	  <div class="floatfix"></div>
+	</div>
+	<div id="graph_container">
+	  <div id="time_chart_zoom_resolution_radio" style="width:275px;">
+	    <input type="radio" id="day" name="time" checked="checked"/><label for="day">Day</label>
+	    <input type="radio" id="week" name="time"/><label for="week">Week</label>
+	    <input type="radio" id="month" name="time"/><label for="month">Month</label>
+	  </div>
+	  <br><br>
+	  <div id="graph">
+	</div></div>
+	
+	<div id="piecharts">
+	  <div class="piechart" id="piechart-socialshareclick">
+	    <div class="piechart-title">
+	      <span class="piechart-value social-share-value">
+	      </span>
+	      <span class="piechart-name">
+		Social Share Click
+	      </span>
+	    </div>
+	    <div class="piechart-widget">
+	    </div>
+	  </div>
+	  <div class="piechart" id="piechart-visits">
+	    <div class="piechart-title">
+	      <span class="piechart-value visits-value">
+	      </span>
+	      <span class="piechart-name">
+		Visits
+	      </span>
+	    </div>
+	    <div class="piechart-widget">
+	    </div>
+	  </div>
+	  <div class="piechart" id="piechart-sales">
+	    <div class="piechart-title">
+	      <span class="piechart-value sales-value">
+	      </span>
+	      <span class="piechart-name">
+		Sales
+	      </span>
+	    </div>
+	    <div class="piechart-widget">
+	    </div>
+	  </div>
+	  <div class="piechart" id="piechart-revenue">
+	    <div class="piechart-title">
+	      <span class="piechart-value">
+	      </span>
+	      <span class="piechart-name">
+	      </span>
+	    </div>
+	    <div class="piechart-widget">
+	    </div>
+	  </div>
+	</div>
+      </div> 
+      
+      
+      <div id="footer">
+	FOOTER CONTENT 
+      </div> 
+    </div>
+  </body> 
+</html>
