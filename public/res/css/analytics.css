@@ -1,0 +1,166 @@
+html, body{ 
+    margin: 0; 
+    padding: 0;
+    font-family: arial;
+    background-color: white;
+    background-image:url('../images/gradient.png');
+    background-repeat: repeat-x;
+    background-attachment:fixed;
+}
+
+/* ---------------------------------------------------------------- */
+
+body #container {
+    text-align: left;
+    margin: 0 auto;
+
+    width: 1000px;
+    clear: both;
+    background-color: white;
+}
+
+/* ---------------------------------------------------------------- */
+
+#header {
+    margin: 0;
+    padding: 10px 5px 10px 5px;
+    background-color: black;
+    width: 990px;
+    clear: both;
+    color: white;
+}
+
+/* ---------------------------------------------------------------- */
+
+#filter {
+    margin-top: 5px;
+    padding: 0;
+    background-color: orange;
+    width: 100%;
+    clear: both;
+}
+
+body #filter #filter-campaign,
+body #filter #filter-from,
+body #filter #filter-to,
+body #filter #filter-sharetypes,
+body #filter #filter-apply
+{
+    float: left;
+    padding: 5px;
+}
+
+body #filter #progress-spinner {
+    float: left;
+    padding: 20px;
+    
+}
+
+/* ---------------------------------------------------------------- */
+
+body #contents {
+    width: 100%;
+/*padding: 5px;*/
+}
+
+body #contents #title {
+    font-size: 20pt;
+    padding: 20px 5px 20px 5px;
+    margin: 0;
+}
+
+/* ---------------------------------------------------------------- */
+
+#overview-boxes {
+    text-align: center;
+}
+
+#overview-boxes .overview-box {
+    float: left;
+    width: 180px;
+    height: 142px;
+    background-color: #336699;
+    margin: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+.overview-box .title {
+    font-size: 14pt;
+    font-weight: bold;
+    height: 40pt;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+.overview-box .value {
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.overview-box .percent {
+    color: white;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* ---------------------------------------------------------------- */
+
+#graph {
+    background-color: white;
+    margin: 20px 5px 20px 5px;
+    width: 950px;
+    height: 160px;
+    padding: 0;
+}
+
+/* ---------------------------------------------------------------- */
+
+#piecharts .piechart {
+    float: left;
+    margin: 25px;
+    width: 400px;
+    height: 300px;
+}
+#piecharts .piechart-title {
+    padding: 10px;
+    text-align: center;
+
+}
+
+#piecharts .piechart-title .piechart-value {
+	font-size: 14pt;
+	font-weight: bold;
+	color: white;
+}
+
+#piecharts .piechart-title .piechart-name {
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+#piecharts .piechart-widget {
+    width: inherit;
+    margin: 0px auto;
+    height: inherit;
+    
+}
+
+/* ---------------------------------------------------------------- */
+
+#footer {
+    margin: 0;
+    padding: 5px;
+    background-color: black;
+    width: 990px;
+    clear: both;
+    text-align: center;
+    color: white;
+
+}
+
+/* ---------------------------------------------------------------- */
+
+.floatfix {
+    clear: both;
+    height: 0;
+}
