@@ -1,17 +1,23 @@
-<?php
-$title = 'User';
-$this->headTitle($title);
-?>
+<p>
+    <?php if ($identity === null): ?>
 
-<h1><?php echo $this->escapeHtml($title); ?></h1>
-<p>
     <a href="<?php echo $this->url('user', array('action' => 'login')); ?>">Login</a><br/>
-    <a href="<?php echo $this->url('user', array('action' => 'logout')); ?>">Logout</a><br/>
-</p>
+
 <p>
-    <?php if($identity === null): ?>
     Not logged in.
-    <?php else: ?>
+</p>
+
+<?php else: ?>
+
+
+<a href="<?php echo $this->url('analytics', array('action' => 'index')); ?>">Analysis & Insights</a>
+<br/>
+<br/>
+<a href="<?php echo $this->url('user', array('action' => 'logout')); ?>">Logout</a><br/>
+
+<p>
+    <br/>
     Logged in as <strong><?php echo $identity ?></strong>.
-    <?php endif; ?>
+</p>
+<?php endif; ?>
 </p>

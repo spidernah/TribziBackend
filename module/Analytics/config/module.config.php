@@ -2,23 +2,23 @@
 return array(
     'controllers' => array(
         'invokables' => array(
-            'User\Controller\User' => 'User\Controller\UserController',
+            'Analytics\Controller\Analytics' => 'Analytics\Controller\AnalyticsController',
         ),
     ),
 
     'router' => array(
         'routes' => array(
-            'user' => array(
+            'analytics' => array(
                 'type'    => 'segment',
                 'options' => array(
-                    'route'    => '/user[/:action][/:id]',
+                    'route'    => '/analytics[/:action][/:id]',
                     'constraints' => array(
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                         'id'     => '[0-9]+',
                     ),
                     'defaults' => array(
-                        'controller' => 'user\Controller\User',
-                        'action'     => 'Index',
+                        'controller' => 'Analytics\Controller\Analytics',
+                        'action'     => 'index',
                     ),
                 ),
             ),
@@ -26,12 +26,9 @@ return array(
     ),
 
     'view_manager' => array(
-//        'template_map' => array(
-//            'user/user/index' => 'var/www/html/TribziBackend/module/user/view/user/user/index.phtml'
-//            ),
+
         'template_map' => array(
-            'user/user/index' =>  __DIR__ .'/../view/user/user/index.phtml',
-            'user/user/login' =>  __DIR__ .'/../view/user/user/login.phtml',
+            'analytics/analytics/index' =>  __DIR__ .'/../view/analytics/analytics/index.phtml',
             ),
         'template_path_stack' => array(
             'user' => __DIR__ . '/../view',

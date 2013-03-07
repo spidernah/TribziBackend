@@ -12,7 +12,6 @@ class UserController extends AbstractActionController
 {
     public function indexAction()
     {
-        echo "indexAction</p>";
         $auth = new AuthenticationService();
 
         $identity = null;
