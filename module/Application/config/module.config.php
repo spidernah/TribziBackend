@@ -15,11 +15,27 @@ return array(
                 'options' => array(
                     'route'    => '/',
                     'defaults' => array(
-                        'controller' => 'User\Controller\User',
-                        'action'     => 'login',
+                        'controller' => 'user\Controller\user',
+                        'action'     => 'Index',
                     ),
                 ),
             ),
+
+            'user' => array(
+                'type'    => 'segment',
+                'options' => array(
+                    'route'    => '/user[/:action][/:id]',
+                    'constraints' => array(
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        'id'     => '[0-9]+',
+                    ),
+                    'defaults' => array(
+                        'controller' => 'user\Controller\user',
+                        'action'     => 'Index',
+                    ),
+                ),
+            ),
+
             // The following is a route to simplify getting started creating
             // new controllers and actions without needing to create a new
             // module. Simply drop new controllers in, and you can access them

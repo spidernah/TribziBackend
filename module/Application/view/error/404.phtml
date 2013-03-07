@@ -5,6 +5,8 @@
 
 <?php
 $reasonMessage= '';
+
+    //var_dump($this);
 switch ($this->reason) {
     case 'error-controller-cannot-dispatch':
         $reasonMessage = $this->translate('The requested controller was unable to dispatch the request.');

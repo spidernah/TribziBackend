@@ -1,0 +1,17 @@
+<?php
+$title = 'User';
+$this->headTitle($title);
+?>
+
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<p>
+    <a href="<?php echo $this->url('user', array('action' => 'login')); ?>">Login</a><br/>
+    <a href="<?php echo $this->url('user', array('action' => 'logout')); ?>">Logout</a><br/>
+</p>
+<p>
+    <?php if($identity === null): ?>
+    Not logged in.
+    <?php else: ?>
+    Logged in as <strong><?php echo $identity ?></strong>.
+    <?php endif; ?>
+</p>

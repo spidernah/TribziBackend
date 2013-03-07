@@ -1,4 +1,9 @@
 <?php
+error_reporting(E_ALL);
+ini_set('error_reporting', E_ALL);
+ini_set('display_errors', 1);
+
+echo 1;
 /**
  * This makes our life easier when dealing with paths. Everything is relative
  * to the application root now.
