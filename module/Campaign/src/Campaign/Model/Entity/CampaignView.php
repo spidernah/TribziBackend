@@ -126,5 +126,122 @@ class CampaignView
         return $this;
     }
 
+    public function getLeaderIncentiveType() {
+        return $this->_leaderIncentiveType;
+    }
+
+    public function setLeaderIncentiveType($val) {
+        $this->_leaderIncentiveType = $val;
+        return $this;
+    }
+
+    public function getLeaderIncentiveAction() {
+        return $this->_leaderIncentiveAction;
+    }
+
+    public function setLeaderIncentiveAction($val) {
+        $this->_leaderIncentiveAction = $val;
+        return $this;
+    }
+
+    public function getLeaderShowAsPercent() {
+        return $this->_leaderShowAsPercent;
+    }
+
+    public function setLeaderShowAsPercent($val) {
+        $this->_leaderShowAsPercent = $val;
+        return $this;
+    }
+
+    public function getLeaderShowAsAmount() {
+        return $this->_leaderShowAsAmount;
+    }
+
+    public function setLeaderShowAsAmount($val) {
+        $this->_leaderShowAsAmount = $val;
+        return $this;
+    }
+
+    public function getLeaderMaxValue() {
+        return $this->_leaderMaxValue;
+    }
+
+    public function setLeaderMaxValue($val) {
+        $this->_leaderMaxValue = $val;
+        return $this;
+    }
+
+    public function getLeaderMinValue() {
+        return $this->_leaderMinValue;
+    }
+
+    public function setLeaderMinValue($val) {
+        $this->_leaderMinValue = $val;
+        return $this;
+    }
+
+    public function getLeaderCouponBase() {
+        return $this->_leaderCouponBase;
+    }
+
+    public function setLeaderCouponBase($val) {
+        $this->_leaderCouponBase = $val;
+        return $this;
+    }
+
+    public function getFriendIncentiveType() {
+        return $this->_friendIncentiveType;
+    }
+
+    public function setFriendIncentiveType($val) {
+        $this->_friendIncentiveType = $val;
+        return $this;
+    }
+
+    public function getFriendIncentiveAction() {
+        return $this->_friendIncentiveAction;
+    }
+
+    public function setFriendIncentiveAction($val) {
+        $this->_friendIncentiveAction = $val;
+        return $this;
+    }
+
+    public function getFriendExpiresDays() {
+        return $this->_friendExpiresDays;
+    }
+
+    public function setFriendExpiresDays($val) {
+        $this->_friendExpiresDays = $val;
+        return $this;
+    }
+
+    public function getFriendMaxValue() {
+        return $this->_friendMaxValue;
+    }
+
+    public function setFriendMaxValue($val) {
+        $this->_friendMaxValue = $val;
+        return $this;
+    }
+
+    public function getFriendMinValue() {
+        return $this->_friendMinValue;
+    }
+
+    public function setFriendMinValue($val) {
+        $this->_friendMinValue = $val;
+        return $this;
+    }
+
+    public function getFriendCouponBase() {
+        return $this->_friendCouponBase;
+    }
+
+    public function setFriendCouponBase($val) {
+        $this->_friendCouponBase = $val;
+        return $this;
+    }
+
 
 }
