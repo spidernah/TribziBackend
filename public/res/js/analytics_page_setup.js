@@ -28,7 +28,7 @@ function updateAnalytics(data) {
 };
 
 $(function () {
-    var baseURL = 'http://www.apid2.tribzi.com/CatBee/api/';
+    var baseURL = 'http://www.apid.tribzi.com/CatBee/api/';
     var campaignURL = baseURL + 'campaign/';
     var dealURL = baseURL + 'deal/';
 
@@ -171,7 +171,7 @@ $(function () {
 		chosenCampaignId = first;
 
 	    }
-	    context['Campaign'] = {'id' : '' + chosenCampaignId}
+	    context['Campaign'] = chosenCampaignId
 
 	    var filter = {
 		action: "getDeal",
