@@ -1,1 +1,10 @@
-page 3
+<?php
+$form = $this->form;
+$form->prepare();
+$form->setAttribute('action', $this->url('campaign', array('action' => 'page4')));
+
+echo $this->form()->openTag($form);
+echo $this->formCollection($form);
+echo $this->form()->closeTag();
+
+?>

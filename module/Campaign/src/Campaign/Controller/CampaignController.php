@@ -8,45 +8,42 @@ use Campaign\Form;
 
 class CampaignController extends AbstractActionController
 {
+    private function bindObject($form)
+    {
+        $request = $this->getRequest();
+        if ($request->isPost()) {
+            //get data from post fields
+            $data = $request->getPost();
+            //apply data to form
+            $form->setData($data);
+
+        }
+        return $form;
+    }
     public function page1Action()
     {
-//        $request = $this->getRequest();
-//        if ($request->isPost())
-//        {
-//            $post = $request->getPost();
-//            if (isset($post['submit']))
-//            {
-//                return $this->redirect()->toRoute('campaign', array(
-//                    'controller' => 'campaign',
-//                    'action'     => 'page2'
-//                ));
-//            }
-//        }
-
-        $form = new \Campaign\Form\CampaignPage1Form();
-//        $form->get('submit')->setValue('to page 2');
-
-        return new ViewModel(array('form' => $form));
+        return new ViewModel(array('form' => $this->bindObject(new \Campaign\Form\CampaignPage1Form())));
     }
 
     public function page2Action()
     {
-        echo '=page2=';
-
-        return new ViewModel(array());
+        return new ViewModel(array('form' => $this->bindObject(new \Campaign\Form\CampaignPage2Form())));
     }
 
     public function page3Action()
     {
-        echo '=page3=';
-
-        return new ViewModel(array());
+        return new ViewModel(array('form' => $this->bindObject(new \Campaign\Form\CampaignPage3Form())));
     }
 
     public function page4Action()
     {
-        echo '=page4=';
+        return new ViewModel(array('form' => $this->bindObject(new \Campaign\Form\CampaignPage4Form())));
+    }
 
-        return new ViewModel(array());
+    public function campaignSaveAction()
+    {
+        //deserialize from form fields and save campaign
+        return $this->redirect()->toRoute('user');
+
     }
 }
